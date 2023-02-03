@@ -45,6 +45,9 @@ https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
 Animation:
 https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 
+Keydown eventlistener:
+https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+
 **NOTES**************************************************************************************************************************************************************************************
 
 CSS: 

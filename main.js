@@ -24,7 +24,6 @@ function drawSquare(x, y, color) {
 //drawSquare(0, 0, "purple")
 
 // Creating the board - the board is a 2-D array of squares
-
 let board = []
 // use for loop to create the rows
 for (r = 0; r < ROW; r++) {
@@ -156,10 +155,20 @@ Piece.prototype.rotate = function(){
 }
 
 //CONTROL the piece
-document.addEventListener('keydown', CONROL);
+document.addEventListener('keydown', CONTROL);
 function CONTROL(event){
-    if(event.keycode ===37){
-        //if the keycode pressed i 37 then ..!!!!!!!! 1.02
+    if(event.keyCode == 37){
+        //if the key code of the key that is being pressed is 37, then the piece will move left
+        p.moveLeft();
+    }else if(event.keyCode == 38){
+        //if the key code of the key pressed is 38, we  rotate the piece (up arrow)
+        p.rotate();
+    }else if(event.keyCode == 39){
+        //if the key code of the key being pressed is 39 then we move the piece to the right
+        p.moveRight();
+    }else if(event.keyCode == 40){
+        // if the key code of the key being pressed is 40 then we move down
+        p.moveDown();
     }
 
 }
